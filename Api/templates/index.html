@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AJAX Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container my-3">
+        <h2>Add a Todo</h2>
+        <form>
+            <div class="mb-3">
+              <label for="title" class="form-label"><b>Todo Title</b></label>
+              <input type="text" class="form-control" id="title" name = "title"aria-describedby="emailHelp">
+              
+            </div>
+            <div class="mb-3" >
+              <label for="desc" class="form-label"><b>Description</b></label>
+              <input type="text" class="form-control" name = "desc" id="desc" >
+            </div>
+
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+          </div>
+    </div>
+
+    <div class="container my-3">
+      <h2>Your Todo</h2>
+      <table class="table", id='table1'>
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Title</th>
+              <th scope="col">Descritpion</th>
+              <th scope="col">Action</th>
+
+            </tr>
+          </thead>
+
+
+</body>
+<script
+  src="{{url_for('static', filename='file1.js')}}">
+</script>
+
+</html>
